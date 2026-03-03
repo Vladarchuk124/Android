@@ -9,7 +9,6 @@ public class OrderViewModel extends ViewModel {
     private final MutableLiveData<OrderData> orderData = new MutableLiveData<>();
     private final MutableLiveData<Boolean> showResult = new MutableLiveData<>(false);
 
-    // Лічильник "очистити форму" — щоб InputFragment міг реагувати на Cancel
     private final MutableLiveData<Integer> clearSignal = new MutableLiveData<>(0);
 
     public LiveData<OrderData> getOrderData() {
