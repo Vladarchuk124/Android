@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вікно замовлення піци"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ваше ім'я"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Тип піци:"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbPepperoni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Пепероні"/>
+
+            <RadioButton
+                android:id="@+id/rbMargarita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Маргарита"/>
+
+            <RadioButton
+                android:id="@+id/rbHawaii"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Гавайська"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Розмір:"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мала"/>
+
+            <RadioButton
+                android:id="@+id/rbMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Середня"/>
+
+            <RadioButton
+                android:id="@+id/rbLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Велика"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Топінги:"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"/>
+
+        <CheckBox
+            android:id="@+id/cbExtraCheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Додатковий сир"/>
+
+        <CheckBox
+            android:id="@+id/cbMushrooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Гриби"/>
+
+        <CheckBox
+            android:id="@+id/cbOlives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Оливки"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:layout_marginTop="14dp"/>
+
+        <Button
+            android:id="@+id/btnOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Відкрити"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
