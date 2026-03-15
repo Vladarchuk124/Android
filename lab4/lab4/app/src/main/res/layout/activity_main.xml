@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Програвач аудіо та відео"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <RadioGroup
+            android:id="@+id/rgMediaType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbAudio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Аудіо"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/rbVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Відео"
+                android:layout_marginStart="20dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnPlayInternal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Відтворити файл з внутрішнього сховища"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnPickFile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Обрати файл із пристрою"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Вставте URL медіафайлу"
+            android:inputType="textUri"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/btnPlayUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Відтворити з Інтернету"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Play" />
+
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pause"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btnStop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stop"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSelected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Файл не вибрано"
+            android:layout_marginTop="16dp" />
+
+        <androidx.media3.ui.PlayerView
+            android:id="@+id/playerView"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="16dp"
+            app:use_controller="true" />
+
+    </LinearLayout>
+</ScrollView>
